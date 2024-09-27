@@ -1,0 +1,459 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(45, 62, 80);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+
+  width: 700px;
+  margin: 10px
+}
+
+.list ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.list h1,
+.list ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-2 {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 90px;
+  background-color: rgb(45, 62, 80);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.icon {
+  font-size: 30px;
+  color: white;
+}
+
+.links-nav2 {
+  list-style-type: none;
+
+}
+
+.links-nav2 a {
+  text-decoration: none;
+  color: rgb(45, 62, 80);
+}
+
+#menu-toggle:checked~.side-bar {
+  display: flex;
+
+}
+
+.side-bar {
+  display: none;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: 100;
+  flex-direction: column;
+  padding: 100px 20px;
+
+}
+
+.hero {
+  height: 100vh;
+  background-color: rgb(27, 188, 155);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 60px
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #34495e;
+  padding-bottom: ;
+  position: relative;
+
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  position: relative;
+}
+
+.star::before,
+.star::after {
+  content: "";
+  height: 2px;
+  width: 50px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.star::before {
+  right: 100%;
+  margin-right: 10px;
+}
+
+.star::after {
+  left: 100%;
+  margin-left: 10px;
+}
+
+.star i {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: inline-block;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+  margin: 30px;
+}
+
+.starblack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  display: block;
+}
+
+.starblack::before,
+.starblack::after {
+  content: "";
+  height: 2px;
+  width: 50px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.starblack::before {
+  right: 100%;
+  margin-right: 10px;
+}
+
+.starblack::after {
+  left: 100%;
+  margin-left: 10px;
+}
+
+.starblack i {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: inline-block;
+}
+
+.cards2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 100px;
+}
+
+.line1,
+.line2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: black;
+}
+
+.border {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: white;
+}
+
+.border img {
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c1 {
+  background-color: rgb(186, 77, 100);
+}
+
+.c2 {
+  background-color: rgb(37, 161, 180);
+}
+
+.c3 {
+  background-color: rgb(19, 15, 14);
+}
+
+.c4 {
+  background-color: rgb(29, 133, 183);
+}
+
+.c5 {
+  background-color: rgb(15, 56, 180);
+}
+
+.c6 {
+  background-color: rgb(204, 178, 163);
+}
+
+.c3 img {
+  top: 10px;
+}
+
+.c4 img {
+  bottom: 1px;
+}
+
+.c5 img {
+  top: 15px;
+}
+
+.c6 img {
+  top: 15px;
+}
+
+.cards h3 {
+  font-size: 30px;
+}
+
+.about {
+  background-color: rgb(27, 188, 155);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+.paragraph {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.paragraph p {
+  width: 20%;
+}
+
+.button {
+  width: 180px;
+  height: 50px;
+  background-color: rgb(27, 188, 155);
+  border: 2px double rgba(250, 250, 250, 0.6);
+  border-radius: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.button span {
+  color: white;
+}
+
+.about h3 {
+  font-size: 30px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.input-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.comunication {
+  gap: 50px;
+  width: 50%;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.comunication input,
+.comunication textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  padding: 10px;
+}
+
+.comunication button {
+  width: 50px;
+  height: 30px;
+  border: 2px solid rgb(27, 188, 155);
+  border-radius: 5px;
+  background-color: rgb(27, 188, 155);
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.contact h3 {
+  font-size: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  background-color: rgb(45, 62, 80);
+  margin-top: 30px;
+  width: 100%;
+}
+
+.part {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+  padding: 40px;
+}
+
+.linkpart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.linkpart i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-decoration: none;
+  color: white;
+}
+
+.part p a {
+  color: rgb(27, 188, 155);
+}
+
+.part p,
+.part h4 {
+  color: white;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width:1230px) {
+  .navbar-2 {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
